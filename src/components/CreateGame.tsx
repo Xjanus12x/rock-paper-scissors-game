@@ -4,6 +4,8 @@ import scissorsIcon from "../../public/images/icon-scissors.svg";
 import rockIcon from "../../public/images/icon-rock.svg";
 import spockIcon from "../../public/images/icon-spock.svg";
 import lizardIcon from "../../public/images/icon-lizard.svg";
+import triangleBg from "../../public/images/bg-triangle.svg";
+import pentagonBg from "../../public/images/bg-pentagon.svg";
 import { useOutletContext, useParams } from "react-router-dom";
 import GameContext from "../Model/GameContext";
 
@@ -48,6 +50,7 @@ function Classic({ handlePlayerClick, handleAnimationEnd }: GameProps) {
     <div
       className="grid grid-cols-2 mx-auto bg-center bg-no-repeat gap-x-10 gap-y-4 bg-triangle bg-[length:70%_60%]  max-w-fit sm:gap-x-20 sm:gap-y-7 choices-container"
       onClick={handlePlayerClick}
+      style={{ backgroundImage: `url(${triangleBg})` }}
     >
       <Chip
         datatype="Paper"
@@ -80,8 +83,9 @@ function Classic({ handlePlayerClick, handleAnimationEnd }: GameProps) {
 function Extended({ handlePlayerClick, handleAnimationEnd }: GameProps) {
   return (
     <div
-      className="grid grid-cols-3 gap-4 sm:gap-0 mx-auto bg-center bg-no-repeat min-w-min choices-container bg-[length:80%] max-w-fit bg-pentagon"
+      className="grid grid-cols-3 gap-4 sm:gap-0 mx-auto bg-center bg-no-repeat min-w-min choices-container bg-[length:80%] max-w-fit"
       onClick={handlePlayerClick}
+      style={{ backgroundImage: `url(${pentagonBg})` }}
     >
       <Chip
         datatype="Scissors"
