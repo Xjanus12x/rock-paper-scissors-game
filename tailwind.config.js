@@ -41,8 +41,6 @@ export default {
           "linear-gradient(hsl(261, 73%, 60%), hsl(261, 72%, 63%))",
         "spock-gradient":
           "linear-gradient(hsl(189, 59%, 53%), hsl(189, 58%, 57%))",
-        triangle: "url('../../public/images/bg-triangle.svg')",
-        pentagon: "url('../../public/images/bg-pentagon.svg')",
       },
       boxShadow: {
         "rings-1":
