@@ -6,7 +6,7 @@ import lizardIcon from "../../public/images/icon-lizard.svg";
 import spockIcon from "../../public/images/icon-spock.svg";
 import CircularIconButton from "../components/GameChips";
 import { useGamemode, useSetScore } from "../Context/GameContext";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const choicesData = new Map<string, { icon: string; className: string }>([
   [
