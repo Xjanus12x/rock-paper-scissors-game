@@ -48,9 +48,12 @@ type GameProps = {
 function Classic({ handlePlayerClick, handleAnimationEnd }: GameProps) {
   return (
     <div
-      className="grid grid-cols-2 mx-auto bg-center bg-no-repeat gap-x-10 gap-y-4 bg-[length:70%_60%]  max-w-fit sm:gap-x-20 sm:gap-y-7 choices-container"
+      className="grid grid-cols-2 mx-auto bg-center bg-no-repeat gap-x-10 gap-y-4 max-w-fit sm:gap-x-20 sm:gap-y-7 choices-container"
       onClick={handlePlayerClick}
-      style={{ backgroundImage: `url(${triangleBg})` }}
+      style={{
+        backgroundImage: `url("${triangleBg}")`,
+        backgroundSize: "70% 80%",
+      }}
     >
       <Chip
         datatype="Paper"
@@ -83,9 +86,9 @@ function Classic({ handlePlayerClick, handleAnimationEnd }: GameProps) {
 function Extended({ handlePlayerClick, handleAnimationEnd }: GameProps) {
   return (
     <div
-      className="grid grid-cols-3 gap-4 sm:gap-0 mx-auto bg-center bg-no-repeat min-w-min choices-container bg-[length:80%] max-w-fit"
+      className="grid grid-cols-3 gap-4 mx-auto bg-center bg-no-repeat sm:gap-0 min-w-min choices-container max-w-fit"
       onClick={handlePlayerClick}
-      style={{ backgroundImage: `url(${pentagonBg})` }}
+      style={{ backgroundImage: `url("${pentagonBg}")`, backgroundSize: "80%" }}
     >
       <Chip
         datatype="Scissors"
