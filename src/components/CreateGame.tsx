@@ -48,7 +48,7 @@ type GameProps = {
 function Classic({ handlePlayerClick, handleAnimationEnd }: GameProps) {
   return (
     <div
-      className="grid grid-cols-2 mx-auto bg-center bg-no-repeat gap-x-10 gap-y-4 bg-triangle bg-[length:70%_60%]  max-w-fit sm:gap-x-20 sm:gap-y-7 choices-container"
+      className="grid grid-cols-2 mx-auto bg-center bg-no-repeat gap-x-10 gap-y-4 bg-[length:70%_60%]  max-w-fit sm:gap-x-20 sm:gap-y-7 choices-container"
       onClick={handlePlayerClick}
       style={{ backgroundImage: `url(${triangleBg})` }}
     >
